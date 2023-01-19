@@ -88,10 +88,10 @@ function install_maltrail () {
 
 	# Install Dependency packages to support MalTrail
 	echo " "
-	print_status "Installing Python-pcapy to support Maltrail..."
-	sudo apt-get install python-pcapy -y &>> $logfile
+	print_status "Installing Python-pcapy-ng to support Maltrail..."
+	sudo pip3 install pcapy-ng &>> $logfile
 	echo " "
-	error_check "Installation of python-pcapy..."
+	error_check "Installation of python-pcapy-ng..."
 
 	# Download and install Maltrail
 	echo " "
